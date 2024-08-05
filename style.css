@@ -6,17 +6,62 @@
   background-color: aquamarine;
   
 } */
-
-.div1{
-  position: relative;  
-  top: 50px;
-  color: red;
-  font-size: 100px;
-  background-color:#0cf03d;
-  
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2D1E6B;
+  box-sizing: border-box;
+  border: 1px dotted black;
 }
 
-/* .DIV2{
-    position: fixed;  
-  }
-   */
+#navbar {
+  margin: 0 auto;
+  width: 80vw;
+  height: 20vh;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
+
+}
+
+#log-container {
+  display: flex;
+  align-items: center;
+}
+
+#log-container img {
+  height: 25px;
+  width: 25px;
+  margin: 10%;
+}
+
+#nav_items {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+
+
+}
+
+/* this makes li to show clickable when cursor hovers it  */
+#nav_items li {
+  cursor: pointer;
+}
+
+#main-header {
+  display: flex;
+  justify-content: flex-end;
+  color: #ffff;
+  position: relative;
+}
+
+#main-header right {
+  width: 90%;
+  /* height: 100%; */
+  mix-blend-mode: color-dodge;
+}

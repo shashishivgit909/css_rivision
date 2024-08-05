@@ -5,33 +5,101 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <!-- font attached by  seraching and selecting font from google font -->
+
+  <!-- font start -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- font end -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="style.css">
+
   <style>
-  
-  *{
-    background: #fff;
-  }
-  span{
-    border:1px dotted black;
-  }
-  p{
-    border:1px dotted rgb(0, 255, 0);
-    display:inline;
-  }
-  a{
-    border:1px dotted rgb(0,50, 255); 
-    display: inline-block;
-    margin-inline-start: 10px;
-  }
   </style>
 </head>
 
 <body>
+  <header>
+    <!-- here is navbar -->
+    <nav id="navbar">
+      <div id="log-container">
+        <img src="./assets/logo.jpg" alt="not found" height="30vh" width="30vw">
+        <h2>board</h2>
+      </div>
 
+      <div id="nav_items">
+        <li>PRODUCTS</li>
+        <li>APPS&GAMES</li>
+        <li>FEATURES</li>
+        <li>SUPPORT</li>
+        <li>ABOUT</li>
+      </div>
 
-  <span>hello  span </span>
-  <p> hello i ma h1</p>
-  <a href="https://www.google.com">Go to google</a>
+      <div class="right">
+        <i class="fa fa-lock"></i>
+      </div>
+    </nav>
+
+    <!-- here is main Header -->
+    <div id="main-header">
+
+      <div id="left">
+        <div class="big-text">
+          <span> LET YOUR</span>
+
+          <br />
+          <span> MIND</span>
+          <span class="gradient-text">EXPLORE</span>
+          <br>
+          <span>NEW WORLD</span>
+        </div>
+
+        <div class="small-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo numquam exercitationem, nisi sint quos, dicta
+          reiciendis in dolor cupiditate, culpa dolorem! Delectus voluptatem eos quas iure laboriosam voluptates quos
+          quaerat!
+
+        </div>
+
+        <div class="buttons">
+          <div class="btn btn1">BUY NOW</div>
+          <div class="btn">PLAY NOW</div>
+        </div>
+
+        <div class="overview">
+          <div class="overview-items">
+            <h4>300+</h4>
+            <h4>Unique Style</h4>
+          </div>
+
+          <div class="overview-items">
+            <h4 class="gradient-text">500+</h4>
+            <h4>Project Finished</h4>
+          </div>
+
+          <div class="overview-items">
+            <h4>400+</h4>
+            <h4>Happy Customer</h4>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="right">
+        <img
+          src="https://img.freepik.com/free-photo/bermuda-triangle-mystery-event_23-2151625795.jpg?t=st=1722856899~exp=1722860499~hmac=a6580ab44815149bcced270b0c57a0db1524e5043da3136d52132ccab80cbeaa&w=740"
+          alt="right image">
+      </div>
+
+    </div>
+
+  </header>
 </body>
 
 </html>
