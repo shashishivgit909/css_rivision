@@ -1,0 +1,46 @@
+div{
+    height:50px;
+    width:40px;
+
+    /* this means all transition or styles defines for all forced states of  element(eg:div) */
+    transition-property: all;
+
+    /* by this trsnsition will take 2 sec to happen (not happen instant) if not specify this then take instant */
+    transition-duration: 2s;  
+
+    /* this function defines how transition between states will happen : eg: below trasition will be done as duration specided by above 2s but in 3 steps  : In same way we can define various functionalities */
+    transition-timing-function:steps(3); 
+
+
+    /* it specify the transition start after specified  time  */
+    transition-delay: 2s;  
+
+
+    /* transitionShortHand for above four transition  property */
+    transition: fontsize 2s ease-in-out 2s; 
+}
+
+
+/* note : transition-timing-function:ease-in : means apply transition in slow pace  */
+/*  below two forced states  have some styles : These styles will be implemented by above transition property i.e the style will take to impelmnent in time specified by transition-duration ,and  will apply style ti element in steps sepcified by "transition-timing-function"  */
+ 
+/* hover means when we move cursor to it  */
+div :hover{
+    background-color: #e40d0d;
+    color: blue;
+    font-weight: 20;
+ }
+
+ /* active state , when we click that elemnt  */
+ div :active{
+    background-color: #0d0606;
+    color: #e40d0d;
+    font-weight: 30;
+ }
+
+ /* NOTE: VVVVVVI : the styles defined in forced states chnage i.e hover or active all are termed as transition-property . So when hovers , then by {transition-property: all}  in above,  all css mentioned in  div :hover{
+    background-color: #e40d0d;
+    color: blue;
+    font-weight: 20;
+ }      will be performed in the way defined by trasition-duration ,transition-timing-function , transition-delay.    We can specify specific also  eg:   background-color . 
+ */

@@ -7,3 +7,8 @@
     Nested Flex Containers
     When you have a parent flex container and a child that is also a flex container, the flex-direction property of the parent does not affect the flex-direction property of the child. Each flex container has its own independent set of flex properties.
 
+
+
+## Transition Property:   (By Shradha didi)
+=> Elements have different states (eg: active , hover   we can see it in inspect). 
+

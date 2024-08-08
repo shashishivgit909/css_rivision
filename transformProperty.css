@@ -1,0 +1,16 @@
+.div1{
+    border: 1px solid black;
+    width: 20vw;
+    /* this tranform element by x and y axis both
+    note:  rotate not only external element on which tranform applied , but it tranform whole elemnt or content inside that element*/
+    /* transform:rotate(90deg);  */
+    /* transform: rotateX('90'); */
+
+    transition-duration: 2s;
+
+}
+
+.div1 :hover{
+    transform: rotateX('90');
+}
+/* we can use tranform property inside force state change : kine hover , active . But transition property applied on that element only  */
