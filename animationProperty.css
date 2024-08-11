@@ -1,0 +1,42 @@
+.div1{
+    height: 2ovh;
+    width: 20vw;
+    border: 1px solid black;
+    background-color: #20db43;
+
+    /* function  to apply the animation template defined  as below by @keyframe */
+    animation-name:colorAnimate;
+    animation-duration:2s; 
+    /* animation-timing-function: ease-in; */
+    animation-delay: 0s;
+    /* by below iteration count makes the animation ofdefined below to happen 5 times with in duration specified above . */
+    animation-iteration-count:5; 
+    
+}
+
+/* note if we make infinite iteration value and commnet easein then the div start to act as  blinking disco light : ( when we make delay in animation 0s , iteration :infinte and duration :0.00056)*/
+/* syntax of defining the animation colorAniumate is name of a animation  */
+@keyframes colorAnimate{
+from {background-color:#20db43;}   
+to {background-color: #ec0e0e;}
+}
+
+
+
+
+
+/* this makes blinking dico light for that element since ther is no delay in animation sosstrts every time immmediatlety and iteration is infinite  in less than 1s so blinking very fast */
+/* .div1{
+    height: 2ovh;
+    width: 20vw;
+    border: 1px solid black;
+    background-color: #20db43;
+
+    
+    animation-name:colorAnimate;
+    animation-duration:.0000025s; 
+   
+    animation-delay: 0s;
+    animation-iteration-count: infinite; 
+    
+} */    

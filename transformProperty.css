@@ -1,16 +1,49 @@
-.div1{
+
+/* .div1{
     border: 1px solid black;
-    width: 20vw;
+    width: 20vw; */
     /* this tranform element by x and y axis both
     note:  rotate not only external element on which tranform applied , but it tranform whole elemnt or content inside that element*/
     /* transform:rotate(90deg);  */
-    /* transform: rotateX('90'); */
+    /* transform: rotateX(90deg);  this rotate the element by using X axis as axis of rotataion so when we rotate any 2D  element by  90 by  X -axis or yaxis as rotataion-axis then element becomes invisible becouse its z -axis comes in front and in 2D z-dimesion is 0.  */  
+   /* transform: rotateY(90deg) */
 
-    transition-duration: 2s;
+/* 
+    transition-duration: all ;
 
-}
+} */
 
-.div1 :hover{
+
+/* .div1:hover{
     transform: rotateX('90');
+} */
+
+/* we can use tranform property inside force state change : like  hover , active . But transition property applied on that element only  */
+
+/* Study transform ,transition from Apna college : */
+
+/* 
+ transition:rotate(degree angle)  (other shown in above css of div1.
+  
+ ##scale: it defines dimesion of element have to increase or decrease.
+ transform:scale(1.5) // THIS MAKES ELEMENT 1.5 TIMES IN ITS PREV WIDTH (X-AXIS) AND HEIGHT(Y-AXIS).
+ transform: scaleX(2) //THIS MAKES ELEMENT 2 TIMES IN ITS PREV WIDTH (X-AXIS).
+ transform:scaleY(1)   //THIS MAKES ELEMENT 1 TIMES(MEANS NO CHNAGE) IN ITS PREV  HEIGHT (Y-AXIS).
+
+ ##skew(30deg) : angle can be positive or negative. Negative tilt elemnt to right side where postive towards left
+     
+*/
+
+/* use of skew in transform Eg:  */
+.div1{
+    border: 1px solid black;
+    width: 20vw;
+    transition: all 2s ease-in ;
+    transform:skew(-30deg); 
 }
-/* we can use tranform property inside force state change : kine hover , active . But transition property applied on that element only  */
+
+.div1:hover{
+    /* transform:skew(-30deg);   */
+    /* transform:skewX(-30deg);   */
+    transform:skewY(-30deg);  
+}

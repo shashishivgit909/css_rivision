@@ -1,23 +1,23 @@
-div{
-    height:50px;
-    width:40px;
-
+.div1{
+    height:100px;
+    width:100px;
+    border: 1px solid black;
     /* this means all transition or styles defines for all forced states of  element(eg:div) */
-    transition-property: all;
+    /* transition-property: all; */
 
     /* by this trsnsition will take 2 sec to happen (not happen instant) if not specify this then take instant */
-    transition-duration: 2s;  
+    /* transition-duration: 2s;   */
 
     /* this function defines how transition between states will happen : eg: below trasition will be done as duration specided by above 2s but in 3 steps  : In same way we can define various functionalities */
-    transition-timing-function:steps(3); 
+    /* transition-timing-function:steps(3);  */
 
 
     /* it specify the transition start after specified  time  */
-    transition-delay: 2s;  
+    /* transition-delay: 2s;   */
 
 
     /* transitionShortHand for above four transition  property */
-    transition: fontsize 2s ease-in-out 2s; 
+    transition: all 2s ease-in 2s; 
 }
 
 
@@ -25,14 +25,14 @@ div{
 /*  below two forced states  have some styles : These styles will be implemented by above transition property i.e the style will take to impelmnent in time specified by transition-duration ,and  will apply style ti element in steps sepcified by "transition-timing-function"  */
  
 /* hover means when we move cursor to it  */
-div :hover{
+.div1:hover{
     background-color: #e40d0d;
     color: blue;
     font-weight: 20;
  }
 
  /* active state , when we click that elemnt  */
- div :active{
+ .div1:active{
     background-color: #0d0606;
     color: #e40d0d;
     font-weight: 30;
