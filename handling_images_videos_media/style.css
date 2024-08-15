@@ -1,0 +1,21 @@
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+  }
+ 
+  /*  thgis makes the image to take  height and width of its parent div  which is box: but  when any image width is crooped then heigth is also cropped sometimes some space is left in box as seen in this: */
+  img {
+     max-width: 100%;
+     max-height: 100%;
+  }
+
+  .cover {
+    object-fit: cover;
+  }
+  
+  .contain {
+    object-fit: contain;
+  }
+
+  /* note : when we make image  */

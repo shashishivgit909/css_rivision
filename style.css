@@ -168,6 +168,36 @@ justify-content: center;
   width:350px;
 }
 
+.discover{
+  display:flex;
+  padding:10px;
+  /* the claculates the left width which is 30% width and divides it as margin from left and right so elemt comes in centre */
+  width:70%;
+  margin:0 auto;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #ffffff40;
+  border-radius:10px;
+
+}
+
+.discover .left img{
+  /* the makes elememt outside the parent div by 20 px */
+  margin-top: -20px;  
+  mix-blend-mode: color-dodge;   
+}
+.big-text {
+  font-size: 30px;
+}
+
+.discover .right .btn2{
+  border: 1px solid #fff;
+  width: fit-content;
+  padding:3px 3px;
+  transform: skewX(-20deg);
+  
+}
+
 /* NOTE:  */
 /* background Property:
 Purpose: A shorthand property that allows you to set multiple background-related properties (including background-color, background-image, background-position, background-size, background-repeat, background-attachment, and background-origin) in one declaration. */
