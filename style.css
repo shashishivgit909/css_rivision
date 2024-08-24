@@ -14,6 +14,25 @@ body {
   border: 1px dotted black;
 }
 
+
+.container {
+  display: flex;
+  /* display:inline-block; */
+  /* width: 80vw; */
+  height: 300px;
+  border: 2px solid black;
+}
+
+.item {
+  /* width: 200px; */
+  border: 1px solid #fff;
+  font-weight: bold;
+  flex-shrink: 1;
+}
+.item1{
+  /* flex-shrink:2; */
+}
+
 #navbar {
   margin: 0 auto;
   width: 80vw;
@@ -113,9 +132,9 @@ body {
   flex-direction: row;
 }
 
-.centre-buttons{
-/* display: flex; */
-justify-content: center;
+.centre-buttons {
+  /* display: flex; */
+  justify-content: center;
 
 }
 
@@ -154,48 +173,49 @@ justify-content: center;
   color: #fff;
 }
 
-.image-crousel{
-  margin:30px;
-  display:flex;
+.image-crousel {
+  margin: 30px;
+  display: flex;
   /* height:400px; */
-  width:100vw;
-  justify-content:space-between;
- align-items: center;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.centre-image{
+.centre-image {
   height: 350px;
-  width:350px;
+  width: 350px;
 }
 
-.discover{
-  display:flex;
-  padding:10px;
+.discover {
+  display: flex;
+  padding: 10px;
   /* the claculates the left width which is 30% width and divides it as margin from left and right so elemt comes in centre */
-  width:70%;
-  margin:0 auto;
+  width: 70%;
+  margin: 0 auto;
   align-items: center;
   gap: 20px;
   border: 1px solid #ffffff40;
-  border-radius:10px;
+  border-radius: 10px;
 
 }
 
-.discover .left img{
+.discover .left img {
   /* the makes elememt outside the parent div by 20 px */
-  margin-top: -20px;  
-  mix-blend-mode: color-dodge;   
+  margin-top: -20px;
+  mix-blend-mode: color-dodge;
 }
+
 .big-text {
   font-size: 30px;
 }
 
-.discover .right .btn2{
+.discover .right .btn2 {
   border: 1px solid #fff;
   width: fit-content;
-  padding:3px 3px;
+  padding: 3px 3px;
   transform: skewX(-20deg);
-  
+
 }
 
 /* NOTE:  */
