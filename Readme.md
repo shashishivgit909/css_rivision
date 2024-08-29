@@ -86,7 +86,20 @@ Item 3 will grow like Item 2 but will shrink twice as much as Item 1 and Item 2.
 
 
 
+## ############ Layout ##############  Topics:
+ 1. Aspect Ratio : ration od width/height of an element:
+=> aspect-auto:
 
+a. aspect-ratio: auto;
+The aspect ratio is determined automatically based on the intrinsic dimensions of the content.
+aspect-square:
+
+b. aspect-ratio: 1 / 1;
+The element maintains a square aspect ratio where the width and height are equal.
+aspect-video:
+
+c. aspect-ratio: 16 / 9;
+The element maintains a 16:9 aspect ratio, commonly used for videos and widescreen displays.
 
 
 
