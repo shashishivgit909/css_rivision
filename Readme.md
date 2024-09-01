@@ -1,5 +1,10 @@
 ## For css flex box : Go this docs: https://css-tricks.com/snippets/css/a-guide-to-flexbox/   (recommneded by chai with code).
 
+####      ###################     POSITION       ############
+1. VVVVI: to move child div with realtive to parent div we have to give  child div { postion:absolute } and parent div should have  non static position and if no such ancestor found then element move realtive to body .By default every element have position staic so , it wont get affected by left ,right , top , bottom until other position value given.
+
+
+
 
 ## Default Flex Direction
     Default Value: row
