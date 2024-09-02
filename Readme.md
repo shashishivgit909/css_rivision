@@ -29,6 +29,7 @@
 
 2.  Whem we give margin then element  make seperation  either from parent of siblings both . if a div is inside a a div and give margin  to inner div to 20px then  it takes  seperation from  parent div . if gives margin negative value it comes outside of that parent div and takes that specified outside that parent div . 
 
+3. margin-left: auto; is a CSS property that automatically sets the left margin of an element. When you use margin-left: auto;, it tells the browser to take up any remaining space on the left side of the element.  In summary, margin-left: auto; is used to push the element to the right by taking up all the available space on the left side.
 
 ## VVI: Default brhaiour of block level elemnets in flexbox
 => Block level elements in flexbox behavave different than it is being  outside flexbox. In flexbox , child div or other block level elemnts takes only that much space required by its content intstead of full width .

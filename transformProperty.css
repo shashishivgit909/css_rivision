@@ -49,3 +49,25 @@
     /* transform:skewX(-30deg);   */
     transform:skewY(-30deg);  
 }
+
+
+/*##### Topic: Translation Property in transform ######################
+
+=>The translateX function in CSS is used to move an element horizontally along the X-axis. It's part of the CSS transform property,
+ which allows you to apply various transformations to an element, such as translating (moving), rotating, scaling, or skewing.
+Code: Syntax:
+transform: translateX(value);
+
+#params:
+=> value: The distance you want to move the element horizontally. It can be specified in units like pixels (px), percentages (%), or any other valid CSS length unit. A positive value moves the element
+ to the right, while a negative value moves it to the left.
+
+ => Important Notes:
+translateX does not affect the flow of the document, meaning the element's original space remains unchanged, and other elements around it are not affected by the transformation.
+It can be combined with other transform functions like translateY, rotate, or scale within the same transform property:
+
+code: .example {
+    transform: translateX(50px) translateY(20px) rotate(45deg);
+}
+
+ */
