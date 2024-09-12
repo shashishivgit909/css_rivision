@@ -3,7 +3,7 @@
 ####      ###################     POSITION       ############
 1. VVVVI: to move child div with realtive to parent div we have to give  child div { postion:absolute } and parent div should have  non static position and if no such ancestor found then element move realtive to body .By default every element have position staic so , it wont get affected by left ,right , top , bottom until other position value given.
 
-
+2. VVI:position:sticky: <header className="p-3 shadow-xl sticky top-0 z-[9999] bg-white">  : header becomes at top of view port sticky with top of all other lement by z-index
 
 
 ## Default Flex Direction
@@ -166,3 +166,14 @@ module.exports = {
     }
   ],
 }
+
+
+## Topic: linear gradient in css: (read from w3 school)
+=> EG: background: linear-gradient(to right, rgba(255, 0, 0, 0.8), rgba(0, 0, 255, 0.5));   // to explain rgba function
+=> rgba(255, 0, 0, 0.8): A semi-transparent red color (0.8 represents 80% opacity).
+=> rgba(0, 0, 255, 0.5): A semi-transparent blue color (0.5 represents 50% opacity).
+
+where opacity means background not visibility when opacity is 0 then fully tranparent I.e background elemnt is fully visible inspite of top element.
+
+
+
