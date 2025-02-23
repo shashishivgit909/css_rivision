@@ -294,9 +294,9 @@ For wrapped content (`flex-wrap: wrap`), `align-content` determines how lines of
 ```
 
 🔹 **Cross Axis Direction Control:**
-- By default, the cross-axis runs **top to bottom** for `row` and **left to right** for `column`.
-- Using `align-items: flex-end` or `align-content: flex-end`, you can **reverse the cross-axis appearance**, making items align **from bottom to top**.
-- Similarly, with `row-reverse`, `align-items: flex-start` can **push items to the right** instead of the left.
+- By default, the cross-axis runs **top to bottom** for `row` or `row-reverse and **left to right** for `column` or `col-reverse`.
+- Using `align-items: flex-end` or `align-content: flex-end`, you can **reverse the cross-axis appearance**, making items align **from bottom to top**. for `row , row-reverse`
+- Similarly, with `col and col-reverse`, `align-items: flex-start` can **push items to the right** instead of the left.
 
 ---
 
@@ -307,8 +307,8 @@ For wrapped content (`flex-wrap: wrap`), `align-content` determines how lines of
 | Value              | Effect                      |
 | ------------------ | --------------------------- |
 | `nowrap` (default) | Items stay in one row       |
-| `wrap`             | Items wrap to new rows      |
-| `wrap-reverse`     | Items wrap in reverse order |
+| `wrap`             | Items wrap to new rows  in the direction of cross axis   |
+| `wrap-reverse`     | Items wrap in reverse direction of cross axis |
 
 ```css
 .container {
@@ -410,7 +410,8 @@ Flexbox is **powerful**, **responsive**, and **widely used** in modern web desig
 
 ## # CSS Grid Properties
 
-CSS Grid is a powerful layout system in CSS, allowing you to design responsive and complex layouts. Below is a list of key properties used to define and manage grid containers and grid items.
+CSS Grid is a powerful layout system in CSS, allowing you to design responsive and complex layouts. Below is a list of key properties used to define and manage 
+grid containers and grid items.
 
 ## 1. **Grid Container Properties**
 
