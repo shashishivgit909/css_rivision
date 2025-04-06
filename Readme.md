@@ -554,3 +554,89 @@ You can create **responsive layouts** by changing grid configurations based on t
       }
   }
 
+
+# 🧾 HTML Elements Cheat Sheet
+
+This document lists common HTML elements, grouped by their **display type** and **usage**.
+
+---
+
+## 🧱 1. Block-Level Elements
+
+Block-level elements start on a new line and take up the full width available.
+
+| Element         | Description              |
+|-----------------|--------------------------|
+| `<div>`         | Generic container        |
+| `<p>`           | Paragraph                |
+| `<h1>`–`<h6>`   | Headings (H1 to H6)      |
+| `<section>`     | Section of a document    |
+| `<article>`     | Independent content      |
+| `<header>`      | Introductory content     |
+| `<footer>`      | Footer content           |
+| `<nav>`         | Navigation links         |
+| `<aside>`       | Sidebar / related info   |
+| `<form>`        | HTML form                |
+| `<table>`       | Table                    |
+| `<ul>`          | Unordered list           |
+| `<ol>`          | Ordered list             |
+| `<li>`          | List item                |
+| `<main>`        | Main document content    |
+| `<hr>`          | Horizontal line          |
+| `<figure>`      | Image or diagram block   |
+| `<figcaption>`  | Caption for a figure     |
+
+---
+
+## 🧷 2. Inline Elements
+
+Inline elements do not start on a new line and take up only as much width as necessary.
+
+| Element       | Description                  |
+|---------------|------------------------------|
+| `<span>`      | Generic inline container     |
+| `<a>`         | Hyperlink                    |
+| `<strong>`    | Important text (bold)        |
+| `<em>`        | Emphasized text (italic)     |
+| `<b>`         | Bold (non-semantic)          |
+| `<i>`         | Italic (non-semantic)        |
+| `<u>`         | Underlined text              |
+| `<img>`       | Image                        |
+| `<label>`     | Form field label             |
+| `<abbr>`      | Abbreviation                 |
+| `<code>`      | Code snippet                 |
+| `<br>`        | Line break                   |
+| `<input>`     | Form input                   |
+| `<select>`    | Dropdown menu                |
+| `<textarea>`  | Text input area              |
+
+---
+
+## 🧩 3. Inline-Block Elements (by default)
+
+These elements behave like inline elements but allow setting width and height.
+
+| Element     | Description     |
+|-------------|-----------------|
+| `<input>`   | Input field     |
+| `<img>`     | Image           |
+| `<button>`  | Button          |
+| `<select>`  | Dropdown        |
+
+---
+
+## ⚙️ 4. Metadata & Other Elements
+
+| Element       | Description                      |
+|---------------|----------------------------------|
+| `<script>`    | Embeds JavaScript                |
+| `<style>`     | CSS styles                       |
+| `<link>`      | External resources (like CSS)    |
+| `<meta>`      | Metadata about the document      |
+| `<title>`     | Document title (in browser tab)  |
+
+---
+
+> 💡 **Tip:** You can change the default display behavior using CSS (e.g., `display: block;` or `display: inline-block;`).
+
+
