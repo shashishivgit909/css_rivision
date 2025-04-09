@@ -40,16 +40,18 @@
 ## Flex-item property:
 1.flex-grow
 
-=> Purpose: Controls how much a flex item should grow relative to the other flex items inside the same container when there is extra space available.
+=> Purpose: Controls how much a flex item should grow relative to the other flex items inside the same container when there is extra space available. It works on main axis .
 Default Value: 0 (The item will not grow to fill the available space).
 Behavior: When flex-grow is set to a positive value (e.g., 1), the flex item will grow to fill the available space in the container. If multiple items have a flex-grow value, they will grow relative to each other according to their flex-grow values.
 
 2.flex-shrink:
 
-=> Purpose: Controls how much a flex item should shrink relative to the other flex items inside the same container when there is not enough space.
+=> Purpose: Controls how much a flex item should shrink relative to the other flex items inside the same container when there is not enough space.It works on main axis .
 Default Value: 1 (The item will shrink if necessary).
 Behavior: When flex-shrink is set to a positive value (e.g., 1), the flex item will shrink when the container is smaller than the combined size of the flex items. If multiple items have a flex-shrink value, they will shrink relative to each other according to their flex-shrink values.
 
+3. to do grow and shrink in cross axis , use align-items:stretch  // to grow acroos cross axis. but no shrink property in css.
+4.  
 ## note : VVI: 
 =>flex-grow: Deals with how items expand in size when there's extra space in the container. Items with higher flex-grow values will take up more space.
 
@@ -263,7 +265,7 @@ The `align-items` and `align-content` properties control alignment **along the c
 | `align-items: flex-start;` | Items align at the top        |
 | `align-items: flex-end;`   | Items align at the bottom     |
 | `align-items: center;`     | Items align in the middle     |
-| `align-items: stretch;`    | Items stretch to fill         |
+| `align-items: stretch;`    | Items stretch to fill  the spaces on cross axis        |
 | `align-items: baseline;`   | Aligns items by text baseline |
 
 ```css
