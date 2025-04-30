@@ -36,6 +36,7 @@
 => Block level elements in flexbox behavave different than it is being  outside flexbox. In flexbox , child div or other block level elemnts takes only that much space required by its content intstead of full width .
 
 
+=> inline-block : These elements like button streches in flex to take full availibale width if its width not restricted or given flex-grow:0 or wrap it in block element like div.
 
 ## Flex-item property:
 1.flex-grow
