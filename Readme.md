@@ -643,3 +643,32 @@ These elements behave like inline elements but allow setting width and height.
 > 💡 **Tip:** You can change the default display behavior using CSS (e.g., `display: block;` or `display: inline-block;`).
 
 
+
+## 📌 Understanding Image Scaling and Parent <div> Expansion in CSS
+=> When inner image/div is translated ot transformed or position:abosolute(then div comes out of layout flow) where div dimesiomn is not changing just its place is changed then parent container layout doesnot changes. 
+
+=> Scale Transformation (transform: scale(...)):
+scale visually resizes the image without changing its actual CSS-defined width and height.
+The image appears bigger or smaller, but its dimensions in the DOM remain constant.
+
+Parent Container Behavior:
+The parent <div> does not expand or contract when the child <img> is scaled.
+This is because transform is purely visual and does not affect the document's layout flow.
+
+1. Overflow Handling:
+=> If the parent has overflow: visible, the scaled portion spills out(shown).
+
+=> If it has overflow: hidden, the overflowing part is clipped(not visilbe).
+
+2. Why Doesn't the Parent Expand?
+
+CSS transforms operate outside the normal document flow.
+It’s like zooming in with a magnifying glass—appearance changes, but actual boundaries do not.
+
+3. If the image is not position: absolute or position: fixed:
+=> If the image is positioned absolutely or fixed, it is removed from the normal document flow, so its expansion does not affect the parent.
+If it is relatively or statically positioned, it will force the parent <div> to grow.
+=> Solution to Expand Parent:
+If you want the parent to grow with the image, you would need custom logic, like using JavaScript or ResizeObserver to dynamically adjust the parent dimensions.
+
+
